@@ -1,0 +1,511 @@
+/*! Sam's Club Responsive C&C Stylesheet - 08.09.2019 - Kishan S Gunesh */
+.scc {
+    color: #686868;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+    .scc * {
+        border: 0 none;
+        padding: 0;
+        margin: 0;
+    }
+
+.scc strong {
+    font-weight: 600;
+}
+
+.sc-chrome-mobile .sc-content-page {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+/* --- Icons --- */
+@font-face {
+    font-family: "icomoon";
+    src: url("https://www.samsclub.com/sams/html/fonts/icomoon.woff?3q8d5l") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.icon-arrow-right2:before {
+    font-family: "icomoon" !important;
+    text-transform: none;
+    line-height: 1;
+    content: "\e902";
+}
+
+/* Typography */
+.scc h1, .scc .h1, .scc h2, .scc .h2, .scc h3, .scc .h3, .scc h4, .scc .h4, .scc h5, .scc .h5, .scc h6, .scc .h6 {
+    color: #424242;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.scc h1, .scc .h1 {
+    font-size: 2.5em;
+}
+
+.scc h2, .scc .h2 {
+    font-size: 1.875em;
+}
+
+.scc h3, .scc .h3 {
+    font-size: 1.5em;
+}
+
+.scc h4, .scc .h4 {
+    font-size: 1.25em;
+}
+
+.scc h5, .scc .h5 {
+    font-size: 1.125em;
+}
+
+.scc h6, .scc .h6 {
+    font-size: 1em;
+}
+
+.scc-side-line {
+    overflow: hidden;
+    text-align: center;
+}
+
+    .scc-side-line:before, .scc-side-line:after {
+        background-color: #d8d8d8;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    .scc-side-line:before {
+        right: 20px;
+        margin-left: -50%;
+    }
+
+    .scc-side-line:after {
+        left: 20px;
+        margin-right: -50%;
+    }
+
+/* Utilities */
+.scc-text-center {
+    justify-content: center;
+    text-align: center;
+}
+
+/* Button */
+.scc-btn, .scc button {
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 40px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.scc-btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Eyebrow */
+.scc-eyebrow {
+    align-self: left;
+    color: #424242;
+    border-bottom: 2px solid transparent;
+    display: inline-flex;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+    .scc-eyebrow-yellow {
+        border-bottom-color: #f5d50c;
+    }
+
+    .scc-eyebrow-cyan {
+        border-bottom-color: #55b5ad;
+    }
+
+
+/* CTAs */
+.scc-btn {
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+    .scc-btn .icon-arrow-right2 {
+        align-items: center;
+        border-radius: 5px;
+        color: #fff;
+        display: none;
+        font-size: 20px;
+        font-weight: 400;
+        height: 33px;
+        justify-content: center;
+        margin-left: 15px;
+        width: 33px;
+    }
+
+/* Small Grid */
+.scc-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .scc-col {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+    }
+
+.scc-w-100 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Footers */
+.scc-footer {
+    font-size: 0.75em;
+    margin: 16px 0;
+    padding: 8px 16px;
+}
+
+    .scc-footer h2, .scc-footer h3, .scc-footer h4 {
+        font: 600 1em/1.1 "aktiv-grotesk-std",sans-serif;
+        margin-bottom: 5px;
+    }
+
+    .scc-footer p {
+        margin-bottom: 8px;
+    }
+        
+    .scc-footer p:first-child {
+        margin-top: 0;
+    }
+    
+    .scc-footer p:last-child {
+        margin-bottom: 0;
+    }
+
+.scc-disclaimer {
+    background-color: #f6f6f6;
+    font-size: 0.75em;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+    .scc-disclaimer p {
+        margin: 8px 0;
+    }
+
+@media (min-width: 479px) {
+
+}
+
+@media (min-width: 767px) {
+    .scc {
+        font-size: 16px;
+    }
+
+    .scc-btn {
+        align-items: center;
+        background-color: transparent !important;
+        color: #424242;
+        padding: 0;
+    }
+        
+        .scc-btn .icon-arrow-right2 {
+            display: inline-flex;
+        }
+
+    .scc-footer {
+        margin: 32px 0;
+        padding: 0 24px;
+    }
+    
+        .scc-footer p {
+            margin-bottom: 16px;
+        }
+
+    .scc-disclaimer {
+        margin: 32px 0;
+        padding: 8px 24px;
+    }
+    
+        .scc-disclaimer p {
+            margin: 16px 0;
+        }
+}
+
+@media (min-width: 992px) {
+    
+}
+
+
+/* n-Ups */
+.scc-nup img {
+    margin-bottom: 10px;
+}
+
+.scc-nup p {
+    margin: 16px 0;
+}
+
+
+/* Base POV / Banner / Shelf / Callout Structure */
+.scc-expires {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.scc-callout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 32px;
+    position: relative;
+}
+
+    .scc-callout h2 sup {
+        font-size: 58%;
+    }
+
+    .scc-callout p {
+        margin: 16px 0;
+    }
+
+
+/* POVs */
+.scc-pov {
+    height: 350px;
+    padding: 30px 55px;
+    width: 1140px;
+}
+
+.scc-pov-cat {
+    height: 370px;
+    width: 760px;
+}
+
+    .scc-pov-cat p {
+        margin: 16px 0;
+    }
+
+
+/* Banners */
+.scc-banner {
+    height: 145px;
+    width: 1140px;
+}
+
+    .scc-banner .scc-prehead {
+        margin-bottom: 8px;
+    }
+
+    .scc-banner p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .scc-banner .scc-cta {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        position: absolute;
+        right: 40px;
+        top: 0;
+    }
+
+
+/* Overlays */
+.scc-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px 25px;
+}
+
+    .scc-overlay-white {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+
+/* Header */
+.scc-title {
+    padding: 5px 32px 10px;
+}
+
+/* Category Product Grid Cards */
+.scc-card {
+    display: flex;
+    flex-basis: 0;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 32px;
+    position: relative;
+}
+
+    .sc-content-card-medium .scc-card {
+        height: 100%;
+    }
+
+    .scc-card hr {
+        border: 1px solid #424242;
+        margin: 20px 0;
+    }
+
+    .scc-card .scc-cta {
+        margin-top: 20px;
+    }
+
+.scc-grid {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+    .scc-grid a {
+        color: #0087cd;
+        display: flex;
+        flex-basis: 0;
+        flex-direction: column;
+        flex-grow: 1;
+        font-weight: 600;
+        justify-content: center;
+        min-width: 1px;
+        max-width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    .scc-grid img {
+        align-self: center;
+        margin-bottom: 16px;
+    }
+
+    .scc-grid p {
+        margin: 10px 0;
+    }
+
+    .scc-grid .scc-cta {
+        margin-top: 16px;
+    }
+
+.scc-grid-3i a, .scc-grid-3i .scc-card {
+    flex: 0 0 33.33333%;
+    height: 320px;
+    max-width: 33.3333%;
+}
+
+.scc-grid-4i a, .scc-grid-4i .scc-card {
+    flex: 0 0 25%;
+    height: 320px;
+    max-width: 25%;
+}
+
+    .scc-grid-3i a:nth-child(3n), .scc-grid-4i a:nth-child(4n) {
+        border-right-color: transparent;
+    }
+
+.scc-grid-lines a {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}    
+
+.scc-grid-lines:after {
+    background-color: #fff;
+    content: " ";
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.scc-vis-nav {
+    background-color: #f8f8f8;
+}
+
+    .scc-vis-nav .scc-grid {
+        padding: 18px 24px;
+    }
+
+
+/* Overrides */
+.scc-white,
+.scc-white h1, .scc-white .h1,
+.scc-white h2, .scc-white .h2,
+.scc-white h3, .scc-white .h3,
+.scc-white h4, .scc-white .h4,
+.scc-white h5, .scc-white .h5,
+.scc-white h6, .scc-white .h6,
+.scc-white .scc-cta,
+.scc-white .scc-eyebrow  {
+    color: #fff;
+}
+
+    .scc-white hr {
+        border-color: #fff;
+    }
+
+
+/* Modals */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scc-modal {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+}
+
+#scc-modal-close {
+    align-items: center;
+    background-color: #424242;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 1) inset;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 33px;
+    justify-content: center;
+    position: absolute;
+    right: -14px;
+    top: -14px;
+    width: 33px;
+}
+
+    #scc-modal-close:hover {
+        background-color: #595959;
+    }
+
+    #scc-modal-close span {
+        color: #fff;
+        font-size: 24px;
+    }

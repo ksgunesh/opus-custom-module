@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv=X-UA-Compatible content="IE=9; IE=EDGE" />
+        <meta name=viewport content="width=1170" />
+        <meta charset=utf-8 />
+        <title>POV / Banner Test - Sam's Club</title>
+        <script>
+            (function (d) {
+                var config = {
+                    kitId: 'mkj5tsx',
+                    scriptTimeout: 3000
+                },
+                    h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://fonts.walmart.com/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+            })(document);</script>
+        <link href="css/responsive.css" rel=stylesheet type="text/css" media=screen />
+        <style>
+            /* Start - Do not copy */
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0 none;
+                box-sizing: border-box;
+            }
+
+            a {
+                text-decoration: none;
+                user-select: none;
+            }
+
+            strong {
+                font-weight: 600;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            html,
+            body,
+            #root {
+                height: 100%;
+                width: 100%;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            body {
+                background-color: #f8f8f8;
+                color: #424242;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 1.5;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif !important;                
+            }
+
+            main {
+                padding: 32px 10px;
+                margin: 0 auto;
+                min-width: 320px;
+                max-width: 1140px;
+            }
+
+            .scc input[type="text"],
+            .scc input[type="color"],
+            .scc select,
+            .scc textarea {
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+                color: #555;
+                display: block;
+                font-size: 14px;
+                height: 35px;
+                line-height: 1.5;
+                padding: 6px 12px;
+                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                width: 100%;
+            }
+
+            .scc textarea {
+                min-height: 4rem;
+            }
+
+            .scc input:focus,
+            .scc select:focus,
+            .scc textarea:focus {
+                border-color: #17afe1;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+                outline: 0 none;
+            }
+
+            .scc input.validate,
+            .scc select.validate,
+            .scc textarea.validate {
+                border-color: #ec0439;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 60, 60, 0.6);
+                color: #000;
+            }
+
+            .row-form {
+                display: flex;
+                margin: 16px 0;
+            }
+
+            .row-form label,
+            .row-form input {
+                padding: 0 8px;
+            }
+
+            .row-form label {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+
+            /* End - Do not copy */
+
+            /* Start Copy of Component CSS */
+
+            /* Base for all components on an LP */
+            .scc-prehead {
+                font-size: .875rem;
+                font-weight: 600;
+                letter-spacing: 0.050em;
+                line-height: 1;
+                margin-bottom: .5rem;
+                text-transform: uppercase;
+            }
+
+            .scc-expires {
+                display: inline-flex;
+                font-size: .875rem;
+                margin-top: 0.75rem;
+            }
+
+            /* Component Specific */
+            .scc-callout-colorblock {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .scc-callout-colorblock.scc-text-first .scc-callout-colorblock-img {
+                order: 1;
+            }
+
+            .scc-callout-colorblock-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1.5rem 1.25rem;
+            }
+
+            .scc-callout-colorblock-text .scc-btn {
+                align-self: flex-start;
+            }
+
+            .scc-callout-colorblock-text.scc-text-center .scc-btn {
+                align-self: center;
+            }
+
+            .scc-callout-colorblock-subhead p,
+            .scc-expires,
+            .scc-btn {
+                margin-top: .5rem;
+            }
+
+            @media (max-width: 760px) {
+                .scc-btn {
+                    color: #fff !important;
+                }
+            }
+
+            @media (min-width: 760px) {
+                .scc-callout-colorblock {
+                    flex-direction: row;
+                    height: 350px;
+                }
+
+                .scc-callout-colorblock-img {
+                    flex: 0 0 66.6667%;
+                }
+
+                .scc-callout-colorblock-img img {
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
+
+                .scc-callout-colorblock-text {
+                    flex: 0 0 33.3333%;
+                    padding: 1rem 2rem;
+                }
+
+                .scc-prehead {
+                    margin-bottom: 1rem;
+                }
+
+                .scc-callout-colorblock-subhead p,
+                .scc-expires,
+                .scc-btn {
+                    margin-top: 1rem;
+                }
+            }
+
+            /* End Copy of Component CSS */
+        </style>
+    </head>
+    <body>
+        <main class="scc">
+            <section>
+                <h2>Module Design</h2>
+                <form>
+                    <div class="row-form">
+                        <label>Image First:</label>
+                        <input type="checkbox" id="scc-form-image-first" />
+                    </div>
+                    <div class="row-form">
+                        <label>Background Color:</label>
+                        <input type="color" id="scc-form-bg-color" />
+                    </div>
+                    <div class="row-form">
+                        <label>Image URL:</label>
+                        <input type="text" id="scc-form-image" />
+                    </div>
+                    <div class="row-form">
+                        <label>Prehead:</label>
+                        <input type="text" id="scc-form-prehead" />
+                    </div>
+                    <div class="row-form">
+                        <label>Prehead Color:</label>
+                        <input type="color" id="scc-form-prehead-color" />
+                    </div>
+                    <div class="row-form">
+                        <label>Title:</label>
+                        <input type="text" id="scc-form-title" />
+                    </div>
+                    <div class="row-form">
+                        <label>Title Header Tag:</label>
+                        <select id="scc-form-title-tag">
+                            <option value="">Select Tag</option>
+                            <option value="h1">H1</option>
+                            <option value="h2">H2</option>
+                            <option value="h3">H3</option>
+                        </select>
+                    </div>
+                    <div class="row-form">
+                        <label>Title Color:</label>
+                        <input type="color" id="scc-form-title-color" />
+                    </div>
+                    <div class="row-form">
+                        <label>Subhead:</label>
+                        <textarea id="scc-form-subhead"></textarea>
+                    </div>
+                    <div class="row-form">
+                        <label>End Date Copy:</label>
+                        <input type="text" id="scc-form-enddate" />
+                    </div>
+                    <div class="row-form">
+                        <label>Subhead Color:</label>
+                        <input type="color" id="scc-form-subhead-color" />
+                    </div>
+                    <div class="row-form">
+                        <label>Text Alignment:</label>
+                        <select id="scc-form-alignment">
+                            <option value="">Select Alignment</option>
+                            <option value="scc-text-left">Left</option>
+                            <option value="scc-text-center">Center</option>
+                        </select>
+                    </div>
+                    <div class="row-form">
+                        <label>CTA Text:</label>
+                        <input type="text" id="scc-form-cta-text" />
+                    </div>
+                    <div class="row-form">
+                        <label>CTA Link:</label>
+                        <input type="text" id="scc-form-cta-link" />
+                    </div>
+                    <div class="row-form">
+                        <label>CTA Color:</label>
+                        <input type="color" id="scc-form-cta-color" />
+                    </div>
+                    <div class="row-form">
+                        <label>CTA Arrow Background Color:</label>
+                        <input type="color" id="scc-form-cta-bg-color" />
+                    </div>
+                </form>
+            </section>
+            <section style="margin: 32px 0;">
+                <div style="display: flex;">
+                    <h2 style="flex: 0 0 40%; margin-bottom: 32px;">Module Preview</h2>
+                    <select id="scc-presets">
+                        <option>Select Presets Examples</option>
+                        <option value="0">Ring-Sizing Guide</option>
+                        <option value="1">Club Pickup</option>
+                    </select>
+                </div>
+                <div class="scc-callout-colorblock" id="scc-callout-colorblock">
+                    <div class="scc-callout-colorblock-img">
+                        <img alt="" id="scc-callout-colorblock-img" src="https://scene7.samsclub.com/is/image/samsclub/20200204-jewelry-pov?wid=1024" />
+                    </div>
+                    <div class="scc-callout-colorblock-text" id="scc-callout-colorblock-text">
+                        <div class="scc-prehead" id="scc-callout-colorblock-prehead"></div>
+                        <h1 id="scc-callout-colorblock-title"></h1>
+                        <div class="scc-callout-colorblock-subhead">
+                            <p id="scc-callout-colorblock-subhead"></p>
+                            <em class="scc-expires" id="scc-callout-colorblock-enddate"></em>
+                        </div>
+                        <p id="scc-callout-colorblock-subhead"></p>
+                        <p class="scc-callout-colorblock-subhead"><em></em></p>
+                        <a href="#" class="scc-btn" id="scc-callout-colorblock-cta"><span class="icon-arrow-right2" id="scc-callout-colorblock-cta-color"></span></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script>
+            var presets = {
+                0: {
+                    "#scc-form-image-first": true,
+                    "#scc-form-bg-color": "#00358E",
+                    "#scc-form-image": "https://scene7.samsclub.com/is/image/samsclub/20200204-jewelry-pov?wid=1024",
+                    "#scc-form-prehead": "",
+                    "#scc-form-prehead-color": "#ffffff",
+                    "#scc-form-title": "Ring-Sizing Guide: How to Measure Ring Size at Home",
+                    "#scc-form-title-tag": "h2",
+                    "#scc-form-title-color": "#ffffff",
+                    "#scc-form-subhead": "Stop guessing ring sizes and running the risk of an imperfect fit—our downloadable ring sizing guide and other tips and tricks will help you nail the ring-buying process.",
+                    "#scc-form-enddate": "",
+                    "#scc-form-subhead-color": "#ffffff",
+                    "#scc-form-alignment": "scc-text-left",
+                    "#scc-form-cta-text": "",
+                    "#scc-form-cta-link": "",
+                    "#scc-form-cta-color": "",
+                    "#scc-form-cta-bg-color": "",
+                },
+
+                1: {
+                    "#scc-form-image-first": false,
+                    "#scc-form-bg-color": "#FFAD0F",
+                    "#scc-form-image": "https://previews.123rf.com/images/nd3000/nd30001709/nd3000170900131/85003103-beautiful-woman-shopping-in-supermarket.jpg",
+                    "#scc-form-prehead": "SAVE TIME WITH",
+                    "#scc-form-prehead-color": "#424242",
+                    "#scc-form-title": "Free Club Pickup",
+                    "#scc-form-title-tag": "h1",
+                    "#scc-form-title-color": "#424242",
+                    "#scc-form-subhead": "Order online, and we'll have everything ready for you when you arrive.",
+                    "#scc-form-enddate": "No minimum order required.",
+                    "#scc-form-subhead-color": "#424242",
+                    "#scc-form-alignment": "scc-text-center",
+                    "#scc-form-cta-text": "Shop Now",
+                    "#scc-form-cta-link": "/c",
+                    "#scc-form-cta-color": "#424242",
+                    "#scc-form-cta-bg-color": "#424242",
+                }
+            }
+
+            $(function () {
+                $("#scc-form-image-first").on("change", function () {
+                    var el = $(this);
+                    if (el.prop("checked") === true) {
+                        $("#scc-callout-colorblock").removeClass("scc-text-first");
+                    }
+                    else {
+                        $("#scc-callout-colorblock").addClass("scc-text-first");
+                    }
+                }).trigger("change");
+
+                $("#scc-form-bg-color").on("change", function () {
+                    var el = $(this);
+                    $("#scc-callout-colorblock").css("backgroundColor", $.trim(el.val()));
+                }).trigger("change");
+
+                $("#scc-form-image").on("keyup", function () {
+                    var el = $(this);
+                    $("#scc-callout-colorblock-img").attr("src", $.trim(el.val()));
+                }).trigger("keyup");
+
+                $("#scc-form-prehead").on("keyup", function () {
+                    var el = $(this);
+                    var val = $.trim(el.val());
+                    if (val === "") {
+                        $("#scc-callout-colorblock-prehead").hide();
+                    }
+                    else {
+                        $("#scc-callout-colorblock-prehead").show().html($.trim(el.val()));
+                    }
+                }).trigger("keyup");
+
+                $("#scc-form-prehead-color").on("change", function () {
+                    var el = $(this);
+                    $("#scc-callout-colorblock-prehead").css("color", $.trim(el.val()));
+                }).trigger("change");
+
+                $("#scc-form-title").on("keyup", function () {
+                    var el = $(this);
+                    $("#scc-callout-colorblock-title").html($.trim(el.val()));
+                }).trigger("keyup");
+
+                $("#scc-form-title-tag").on("change", function () {
+                    var el = $(this);
+                    var val = $.trim(el.val());
+                    if (val != "") {
+                        $("#scc-callout-colorblock-title").replaceWith("<" + val + " id='scc-callout-colorblock-title'>" + $("#scc-callout-colorblock-title").html() + "</" + val + ">");
+                        $("#scc-form-title-color").trigger("change");
+                    }
+                }).trigger("change");
+
+                $("#scc-form-title-color").on("change", function () {
+                    var el = $(this);
+                    $("#scc-callout-colorblock-title").css("color", $.trim(el.val()));
+                }).trigger("change");
+
+                $("#scc-form-subhead").on("keyup", function () {
+                    var el = $(this);
+                    $("#scc-callout-colorblock-subhead").html($.trim(el.val()));
+                }).trigger("keyup");
+
+                $("#scc-form-enddate").on("keyup", function () {
+                    var el = $(this);
+                    var val = $.trim(el.val());
+                    if (val === "") {
+                        $("#scc-callout-colorblock-enddate").hide();
+                    }
+                    else {
+                        $("#scc-callout-colorblock-enddate").show().html($.trim(el.val()));
+                    }
+                }).trigger("keyup");
+
+                $("#scc-form-subhead-color").on("change", function () {
+                    var el = $(this);
+                    $(".scc-callout-colorblock-subhead").css("color", $.trim(el.val()));
+                }).trigger("change");
+
+                $("#scc-form-alignment").on("change", function () {
+                    var el = $(this);
+                    var val = $.trim(el.val());
+                    if (val != "") {
+                        $("#scc-callout-colorblock-text").removeClass("scc-text-center scc-text-left").addClass(val);
+                    }
+                }).trigger("keyup");
+
+                $("#scc-form-cta-text").on("keyup", function () {
+                    var el = $(this);
+                    var val = $.trim(el.val());
+                    if (val == "") {
+                        $("#scc-callout-colorblock-cta").hide();
+                    }
+                    else {
+                        $("#scc-callout-colorblock-cta").show().html($.trim(el.val()) + "<span class='icon-arrow-right2' id='scc-callout-colorblock-cta-color'></span>");
+                    }
+
+                }).trigger("keyup");
+
+                $("#scc-form-cta-link").on("keyup", function () {
+                    var el = $(this);
+                    $("#scc-callout-colorblock-cta").attr("href", $.trim(el.val()));
+                }).trigger("keyup");
+
+                $("#scc-form-cta-color").on("change", function () {
+                    var el = $(this);
+                    $("#scc-callout-colorblock-cta").css("color", $.trim(el.val()));
+                }).trigger("change");
+
+                $("#scc-form-cta-bg-color").on("change", function () {
+                    var el = $(this);
+                    $("#scc-callout-colorblock-cta").css("backgroundColor", $.trim(el.val()));
+                    $("#scc-callout-colorblock-cta-color").css("backgroundColor", $.trim(el.val()));
+                }).trigger("change");
+
+                function setPreset(ind) {
+                    for (var item in presets[ind]) {
+                        if (item === "#scc-form-image-first") {
+                            $(item).prop("checked", presets[ind][item]).trigger("change");
+                        }
+                        else {
+                            $(item).val(presets[ind][item]).trigger("change").trigger("keyup");
+                        }
+                    }
+                }
+
+                $("#scc-presets").on("change", function () {
+                    var el = $(this);
+                    var val = $.trim(el.val());
+                    if (val != "") {
+                        setPreset(val);
+                    }
+                });
+
+                $("#scc-presets").val(0).trigger("change");
+            });
+        </script>
+    </body>
+</html>
